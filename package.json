@@ -1,0 +1,33 @@
+{
+  "name": "workshop-node",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test:unit": "jest test/unit",
+    "test:integration": "jest test/integration --setupTestFrameworkScriptFile ./test/setupIntegration.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "test:e2e": "jest test/e2e --setupTestFrameworkScriptFile ./test/setupIntegration.js",   
+    "sequelize": "sequelize",
+    "web": "node web.js",
+    "web:dev": "nodemon web.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "awilix": "^4.0.1",
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "jest": "^23.6.0",
+    "pg": "^7.7.1",
+    "sequelize": "^4.41.2",
+    "sequelize-cli": "^5.4.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.7",
+    "supertest": "^3.3.0"
+  }
+}
